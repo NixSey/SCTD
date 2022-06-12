@@ -10,14 +10,15 @@ print("="*64)
 maxerr = 0 # Avoid Ban when user AFK.
 api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 auth = str(input("Auth Key: "))
-pos = int(input("""0 = Round 1 (Eliminated)
+pos = int(input("""
+0 = Round 1 (Eliminated)
 1 = Round 2 (Eliminated)
 2 = Round 3 (Eliminated)
 3 = Round 3 (Winner)
 Note: Please input Correctly to Avoid Ban.
 Input: """))
-dely = float(input("Delay per Requests (Ex. 0.5, 1.0, 1.5, and etc): "))
-thr = int(input("Threads: "))
+dely = float(input("\nDelay per Requests (Ex. 0.5, 1.0, 1.5, and etc): "))
+thr = int(input("\nThreads: "))
 print("="*64)
 
 def s():
