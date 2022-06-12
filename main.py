@@ -48,7 +48,7 @@ def s():
                                 if maxerr >= 1000: # Avoid Ban Detection
                                         break
                                         sys.exit(0)
-                        time.sleep(dely)
+                        if dely > 0: time.sleep(dely)
                 except Exception as e:
                         print(e)
                         break
