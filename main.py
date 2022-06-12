@@ -8,10 +8,17 @@ os.system('cls' if os.name == 'nt' else 'clear')
 print(f"\t   Simple Crown/Trophy Duplicators for Stumble Guys")
 print(f"\t\t\tBy: KIPASGTS & PhynX")
 print("="*64)
+api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 auth = str(input("Auth Key: "))
+pos = int(input("""0 = Round 1 (Eliminated)
+1 = Round 2 (Eliminated)
+2 = Round 3 (Eliminated)
+3 = Round 3 (Winner)
+Note: Please input Correctly to Avoid Ban.
+Input: """))
 thr = int(input("Threads: "))
 
-def serang():
+def s():
         while True:
                 dt = datetime.datetime.now()
                 try:
@@ -19,9 +26,9 @@ def serang():
                             'authorization': auth,
                             'use_response_compression': 'true',
                             'Accept-Encoding': 'gzip',
-                            'Host': 'kitkabackend.eastus.cloudapp.azure.com:5010',
+                            'Host': api,
                         }
-                        response = requests.get('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', headers=headers)
+                        response = requests.get(f'http://{api}/round/finishv2/{pos}', headers=headers)
                         if response.status_code == 200:
                                 trof = response.text.split('"SkillRating":')[1].split(',')[0]
                                 cro = response.text.split('"Crowns":')[1].split(',')[0]
@@ -34,4 +41,4 @@ def serang():
                         sys.exit(0)
 
 for _ in range(thr):
-        threading.Thread(target=serang).start()
+        threading.Thread(target=s).start()
