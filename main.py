@@ -1,5 +1,4 @@
-# Exploit Founded at Sunday, 12 June 2022 by KIPASGTS aka KIPAS
-# Some Idea from: Geruays & Revan-ar
+# Some Ideas from: KIPAS, Geruays & Revan AR
 # Script created by PhynX
 
 import requests, threading, datetime, sys, os
