@@ -16,7 +16,7 @@ pos = int(input("""0 = Round 1 (Eliminated)
 3 = Round 3 (Winner)
 Note: Please input Correctly to Avoid Ban.
 Input: """))
-del = float(input("Delay per Requests (Ex. 0.5, 1.0, 1.5, and etc): "))
+dely = float(input("Delay per Requests (Ex. 0.5, 1.0, 1.5, and etc): "))
 thr = int(input("Threads: "))
 print("="*64)
 
@@ -42,7 +42,7 @@ def s():
                                 maxerr = maxerr + 1
                                 print(f"[{response.status_code}] Failed")
                                 if (maxerr >= 1000) break # Avoid Ban Detection
-                        time.sleep(del)
+                        time.sleep(dely)
                 except Exception as e:
                         print(e)
                         sys.exit(0)
