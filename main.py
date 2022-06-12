@@ -7,7 +7,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 print(f"\t   Simple Crown/Trophy Duplicators for Stumble Guys")
 print(f"\t\t\tBy: KIPASGTS & PhynX")
 print("="*64)
-maxerr = 1000 # Avoid Ban when user AFK.
+maxerr = 0 # Avoid Ban when user AFK.
 api = "kitkabackend.eastus.cloudapp.azure.com:5010"
 auth = str(input("Auth Key: "))
 pos = int(input("""0 = Round 1 (Eliminated)
