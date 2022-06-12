@@ -10,7 +10,6 @@ print(f"\t\t\tBy: KIPASGTS & PhynX")
 print("="*64)
 auth = str(input("Auth Key: "))
 thr = int(input("Threads: "))
-#auth = '{"DeviceId":"9ba3294fea4bb181df5fbfecbf6be796","GoogleId":"","FacebookId":"","Token":"9xOLpZaGxFUvrE6i94R1Fz29qd-uAz6V","Timestamp":1655031269,"Hash":"21ed9d97278c2d8e164c9a6e38159d276c523865"}'
 
 def serang():
         while True:
