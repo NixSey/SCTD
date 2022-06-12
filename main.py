@@ -41,7 +41,8 @@ def s():
                         else:
                                 maxerr = maxerr + 1
                                 print(f"[{response.status_code}] Failed")
-                                break if maxerr >= 1000 # Avoid Ban Detection
+                                if maxerr >= 1000: # Avoid Ban Detection
+                                        break
                         time.sleep(dely)
                 except Exception as e:
                         print(e)
