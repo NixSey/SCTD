@@ -26,6 +26,8 @@ def s():
                             'use_response_compression': 'true',
                             'Accept-Encoding': 'gzip',
                             'Host': api,
+                            'Connection': None,
+                            'User-Agent': None,
                         }
                         response = requests.get(f'http://{api}/round/finishv2/{pos}', headers=headers)
                         if response.status_code == 200:
