@@ -44,7 +44,7 @@ def s():
                                 break
                                 sys.exit(0)
                         else:
-                                maxerr = maxerr + 1
+                                maxerr += 1
                                 print(f"[{response.status_code}] Failed. Maybe Auth Key Expired?")
                                 if maxerr >= 1000: # Avoid Ban Detection
                                         break
