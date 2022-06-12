@@ -8,6 +8,7 @@ First, search the `Authorization:` header value from packet sniffer. Then copy &
 - requests
 
 # Credits
-* Nevolution Team
+* [Nevolution Team](https://chat.whatsapp.com/KnVH5FjMe66CBY9QW1nQK5)
+* [@Revan AR](https://github.com/revan-ar)
 * [@KIPASGTS A.K.A KIPAS](https://github.com/KIPASGTS)
 * [@Geruays A.K.A TanVan](https://github.com/Geruays)
