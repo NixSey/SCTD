@@ -38,14 +38,20 @@ def s():
                                 cro = response.text.split('"Crowns":')[1].split(',')[0]
                                 sys.stdout.write(f"\r[{dt.year}-{dt.month}-{dt.day} {dt.hour}:{dt.minute}:{dt.second}] Success | Trophy: {trof} | Crowns: {cro}")
                                 sys.stdout.flush()
+                        elif response.status_code == 403 and response.text == "BANNED":
+                                print(f"[{dt.year}-{dt.month}-{dt.day} {dt.hour}:{dt.minute}:{dt.second}] YOUR ACCOUNT HAS BEEN BANNED FROM SERVER SIDE!")
+                                break
+                                sys.exit(0)
                         else:
                                 maxerr = maxerr + 1
-                                print(f"[{response.status_code}] Failed")
+                                print(f"[{response.status_code}] Failed. Maybe Auth Key Expired?")
                                 if maxerr >= 1000: # Avoid Ban Detection
                                         break
+                                        sys.exit(0)
                         time.sleep(dely)
                 except Exception as e:
                         print(e)
+                        break
                         sys.exit(0)
 
 for _ in range(thr):
