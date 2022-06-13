@@ -56,9 +56,7 @@ def s():
                                         sys.exit(0)
                         if dely > 0: time.sleep(dely)
                 except Exception as e:
-                        print(e)
-                        break
-                        sys.exit(0)
+                        pass
 
 if __name__ == "__main__":
 	main()
