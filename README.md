@@ -5,7 +5,7 @@
 ### ID:
 1. Run HttpCanary/Packet Sniffer.
 2. login Stumble Guys.
-3. usahain masuk ronde 2/3.
+3. usahain masuk ronde 1/2/3.
 3. Lu harus eliminasi atau win.
 4. Kalo udh eliminasi atau win jangan pencet claim.
 5. Ke http canary trus ke yg Kitka backend.
